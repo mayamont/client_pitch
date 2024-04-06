@@ -1,0 +1,368 @@
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header {
+    background-color:rgb(244, 64, 94);;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  
+  header h1 {
+    font-size: 36px;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    align-items: center; /* Align items vertically */
+  }
+  
+  header h1 img {
+    width: 40px; /* Adjust the size of the icon */
+    margin-right: 10px; /* Add spacing between the icon and text */
+  }
+  
+  header .golden {
+    color: #ffdd55;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  main {
+    padding: 20px 0;
+  }
+  
+  #hero {
+    color: #333; /* Changing text color to dark */
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  #hero h2 {
+    font-size: 48px;
+  }
+  
+  #hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    background-color: #ffdd55;
+    color: #333;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #ffcc33;
+  }
+  
+  footer {
+    background-color: rgb(244, 64, 94);
+    padding: 40px 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .social-media a {
+    margin-right: 10px;
+  }
+  
+  .social-media img {
+    width: 60px;
+    height: 60px;
+  }
+  .flavor-gallery {
+    display: flex; /* Use flexbox to align cards */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line if necessary */
+    justify-content: space-between; /* Distribute space between cards */
+  }
+
+    .flavor-card {
+  max-width: 300px; /* Set maximum width for the card */
+  width: calc(50% - 20px); /* Set card width to 50% of the container minus the margin */
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+ }
+
+  .flavor-card img {
+    max-width: 200%; /* Ensure image doesn't exceed card width */
+    max-height: 400px; /* Set maximum height for image */
+    display: block; /* Ensure image doesn't affect other elements' layout */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+  
+  .flavor-card h3 {
+    font-size: 26px;
+    margin: 15px 0;
+    text-align: center; /* Center the flavor name */
+  }
+  
+  .flavor-card p {
+    font-size: 16px;
+    margin: 0 15px 15px;
+  }
+  @media (max-width: 600px) {
+    .flavor-card {
+      width: calc(100% - 20px); /* Set card width to 100% on smaller screens */
+    }
+  }
+  /* Nutrition page specific styles */
+#nutrition {
+    padding: 80px 0;
+  }
+  
+  #nutrition h2 {
+    font-size: 36px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  #nutrition p {
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.6;
+  }
+  
+  .nutrition-table {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow-x: auto; /* Add horizontal scrolling for small screens */
+  }
+  
+  .nutrition-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  .nutrition-table th,
+  .nutrition-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #fff; /* Add a white border bottom */
+  }
+  
+  .nutrition-table th {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+  }
+  
+  .nutrition-table td:first-child {
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .nutrition-table {
+      overflow-x: auto; /* Enable horizontal scrolling on small screens */
+    }
+  }
+
+#about {
+    background-color: #fff;
+    padding: 80px 0;
+  }
+  
+  #about h2 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  #about p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+  }
+  #flavors {
+    background-color: #fff;
+    padding: 80px 0;
+  }
+  #flavors h2 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  #visit p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+  }
+  #visit {
+    background-color: #fff;
+    padding: 80px 0;
+  }
+  #visit h2 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  #visit p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+  }
+  .address-table {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow-x: auto; /* Add horizontal scrolling for small screens */
+  }
+  
+  .address-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  .address-table th,
+  .address-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #fff; /* Add a white border bottom */
+  }
+  
+  .address-table th {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+  }
+  
+  .address-table td:first-child {
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .address-table {
+      overflow-x: auto; /* Enable horizontal scrolling on small screens */
+    }
+  }
+  
+  /* Slideshow container */
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  .nutrition-image {
+    display: block;
+    margin: 0 auto 30px; /* Center the image and add space below */
+    max-width: 75%; /* Ensure image doesn't exceed container width */
+  }
+  .visit-image {
+    display: block;
+    margin: 20px auto; /* Center the image and add space around it */
+    max-width: 65%; /* Ensure image doesn't exceed container width */
+  }
